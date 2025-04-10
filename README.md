@@ -13,9 +13,9 @@ AIrenaX is a smart stadium management system designed to enhance the fan experie
    - Fans can join virtual queues for services like food, beverages, or merchandise from their seats.
    - The app sends notifications to users when it’s their turn, minimizing wait times and preventing long lines.
 
-### 3. **Personalized Seat Navigation**
-   - The app uses AR/VR technology to guide fans to their seats and around the stadium.
-   - Makes use of computer vision models like Mask R-CNN for seat detection and SLAM for navigation to provide real-time directions.
+### 3. **Personalized Seat Navigation (2D Map)**
+   - The app provides 2D map-based navigation to guide fans to their seats and around the stadium.
+   - a 2D map shows the layout of the stadium, and the app provides turn-by-turn directions to the selected seat.
 
 ## Tech Stack
 
