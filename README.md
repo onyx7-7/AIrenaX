@@ -1,35 +1,75 @@
-# AIrenaX
-# AIrenaX
 
-AIrenaX is a smart stadium management system designed to enhance the fan experience. The app leverages AI technologies to improve crowd management, provide personalized navigation, and offer virtual queueing for stadium services.
+# 🧠 AIrenaX - Smart Stadium Experience
 
-## MVP Features
+AIrenaX is an AI-powered smart stadium management system built with **React + Vite (TypeScript)**, **Node.js (Express)**, **MySQL**, and **Streamlit**. It enhances the fan experience through real-time navigation, crowd detection, virtual queueing and intelligent food recommendations.
 
-### 1. **AI-powered Crowd Detection**
-   - The app uses AI models like YOLO to monitor and assess crowd density in the stadium.
-   - Helps identify areas of high congestion and optimize crowd movement, improving overall stadium safety and comfort.
+---
 
-### 2. **Virtual Queueing**
-   - Fans can join virtual queues for services like food, beverages, or merchandise from their seats.
-   - The app sends notifications to users when it’s their turn, minimizing wait times and preventing long lines.
+## 🚀 Features
 
-### 3. **Personalized Seat Navigation (2D Map)**
-   - The app provides 2D map-based navigation to guide fans to their seats and around the stadium.
-   - a 2D map shows the layout of the stadium, and the app provides turn-by-turn directions to the selected seat.
+### 🎟 Seat Navigation with Crowd Awareness
+- Interactive 2D stadium map
+- Recommends best gate with lowest crowd levels
+- Routes users from gate to specific seat, restrooms, or food areas
 
-## Tech Stack
+### 📦 Virtual Queuing System
+- View and join queues remotely
+- Real-time queue updates via WebSocket
+- Notifications when it’s your turn
 
-- **Frontend**: Flutter for cross-platform mobile development (iOS and Android)
-- **Backend**: Node.js with Express for handling API requests
-- **AI Models**: YOLO for crowd detection, Mask R-CNN for seat detection, SLAM for navigation
-- **Authentication**: JWT (JSON Web Tokens) for secure user login
-- **Storage**: SharedPreferences for local storage
+### 🍽 Smart Recommendations
+- ML-powered food suggestions using LightFM
+- Personalized to user preferences and order history
+- Displays venue images and order count dynamically
 
-## Installation
+### 📍 Venue Overview
+- List of all food/merchandise venues
+- Displays logo, location, opening hours, and crowd percentage
 
-### Prerequisites
+---
 
-Make sure you have the following installed on your system:
-- [Flutter](https://flutter.dev/docs/get-started/install) (for building the app)
-- [Node.js](https://nodejs.org/) (for backend)
+## 🛠 Tech Stack
+
+- **Frontend**: React + Vite (TypeScript), Tailwind CSS
+- **Backend**: Node.js (Express + TypeScript)
+- **Database**: MySQL + Workbench
+- **ML Model**: LightFM (Python)
+- **Navigation UI**: Streamlit + OpenCV + Matplotlib
+- **Communication**: REST APIs + WebSocket
+
+---
+
+## 🧪 How to Run
+
+### 1. Backend
+```bash
+cd server
+npm install
+npm run dev
+```
+
+### 2. Frontend
+```bash
+cd client
+npm install
+npm run dev
+```
+
+### 3. Smart Navigation (Streamlit)
+```bash
+cd streamlit
+streamlit run AIrenaX_CrowdAware_Navigation.py
+```
+---
+
+## 👩‍💻 Developed By
+
+- Dema Alrahal (AIrenaX Team Lead)
+-Amjad alluqmani
+-shouq alquraifah
+-Fatimah alzahrani
+- Built as part of the **AI League Finals 2025**
+
+---
+
 
